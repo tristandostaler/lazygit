@@ -2,8 +2,13 @@
 http://stackoverflow.com/questions/19595067/git-add-commit-and-push-commands-in-one
 
 #/bin/sh
+
+#check if a message is supplied
+
+#then
 git add .
 git commit -a -m "$1"
 git push
 
+#to use:
 lazygit "My commit msg"

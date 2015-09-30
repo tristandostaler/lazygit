@@ -1,4 +1,11 @@
 #/bin/sh
+
+if [ $# -eq 0 ]
+ then
+  echo "NO commit message supplied"
+  exit
+fi
+
 git add .
 git commit -a -m "$1"
 git push
